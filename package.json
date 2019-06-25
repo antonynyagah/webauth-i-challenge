@@ -1,16 +1,20 @@
 {
-  "name": "webauth-i",
-  "version": "1.0.0",
-  "description": "Use Node.js, Express and Knex to build an API that provides Register and Login functionality using SQLite to store User information.",
-  "main": "index.js",
-  "repository": "https://github.com/antonynyagah/webauth-i-challenge.git",
-  "author": "Antony Nyagah",
-  "license": "MIT",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "helmet": "^3.18.0",
-    "knex": "^0.17.6",
-    "node.js": "^0.0.0"
-  }
+	"main": "index.js",
+	"scripts": {
+		"server": "nodemon index.js",
+		"start": "node index.js"
+	},
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"connect-session-knex": "^1.4.0",
+		"cors": "^2.8.5",
+		"express": "^4.17.1",
+		"express-session": "^1.16.2",
+		"helmet": "^3.18.0",
+		"knex": "^0.17.6",
+		"sqlite3": "^4.0.9"
+	},
+	"devDependencies": {
+		"nodemon": "^1.19.1"
+	}
 }
